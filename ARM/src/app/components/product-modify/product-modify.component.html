@@ -1,0 +1,42 @@
+<head>
+        <link href="product-modify.component.css">
+      </head>
+      <body>
+        <div class="container">
+        <div id="logo"><h1 class="logo">ARM</h1>
+          <div class="CTA">
+            <h1> < FAQ ></h1>
+            </div>
+        </div>
+        <div class="leftbox">
+          <nav>
+            <a id="profile" routerLink="/main" class="active"><i class="fa fa-user"></i></a>
+            
+          </nav>
+        </div>
+        <div class="rightbox">
+          <div class="profile">
+            <form (ngSubmit) = "onSubmit()">
+            <h1>Product ID -  {{products.productId}}</h1>
+            <h2>PRODUCT CATEGORY</h2>
+            <p><input type="text" [(ngModel)]="products.productCategory" name="category" required></p>
+            <h2>PRODUCT NAME</h2>
+            <p><input type="text"  [(ngModel)]="products.productName" name="name" required></p>
+            <h2>LOCATION</h2>
+            <p><input type="text" [(ngModel)]="products.location" name="location" required></p>
+            <h2>DESCRIPTION</h2>
+            <p><input type="text"  [(ngModel)]="products.productDescription" name="desc" required></p>
+            <h2>RENATL TIME</h2>
+            <p><input type="text" [(ngModel)]="products.productRentalTime" name="time" required></p>
+            <h2>PRODUCT AMOUNT</h2>
+            <p><input type="text" [(ngModel)]="products.productAmount" name="amt" required></p>
+            <button class="btn">SUBMIT</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      </body>
+      <footer>
+        <p>made by ARM TEAM</p> ♡
+      </footer>
+      

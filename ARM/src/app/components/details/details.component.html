@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    APPLIANCE RENTAL MANAGEMENT SYSTEM</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a routerLink="/detail">PRODUCT VIEW</a></li>
+                <li><a routerLink="/product">PRODUCT UPLOAD</a></li>
+                <li><a routerLink="/main">HOME PAGE</a></li>
+                <li><a routerLink="/logout">LOG OUT</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="container">
+
+  <table class = "table table-striped">
+      <thead class="table-dark">
+          <tr>
+              <th>PRODUCT NAME </th>
+              <th>CATEGORY </th>
+              <th>RENTAL TIME</th>
+              <th>RENTAL AMOUNT</th>
+              <th>LOCATION</th>
+              <th colspan="2">DESCRIPTION</th>
+              <th>DELETE </th>
+              <th>MODIFY</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor = "let prod of product" >
+             
+              <td>{{prod.productName}}</td>
+              <td>{{prod.productCategory}}</td>
+              <td>{{prod.productRentalTime }}</td>
+              <td>{{prod. productAmount}}</td>
+              <td>{{prod.location }} </td>
+              <td colspan="2">{{prod. productDescription}}</td>
+              <td><button (click)= "successNotification(prod.productId)" class = "btn" style="margin-left: 10px"><i class="fa fa-trash fa-2x" style="color: red"></i></button></td>
+              <td><button (click)="onclick(prod.productId)" class = "btn" style="margin-left: 10px"><i class="fa fa-paint-brush fa-2x"></i></button></td>
+              
+          </tr>
+      </tbody>
+  </table>
+  
+</div>
+</body>
+</html>

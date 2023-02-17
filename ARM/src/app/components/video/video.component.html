@@ -1,0 +1,113 @@
+<body>
+
+    <div class="container">
+    
+        <div class="card">
+    
+            <div class="row g-0">
+    
+                 <div class="col-md-6">
+    
+                     <div class="h-100 d-flex justify-content-center align-items-center">
+    
+                         <div class="py-4 px-3">
+    
+                            
+    
+                              <h4>Signup</h4>
+    
+                               <div class="row g-2 mt-1">
+    
+                                    <div class="col-md-6">
+    
+                                         <div class="input-field">
+    
+                                             <input type="text" class="form-control" id="input1" [(ngModel)]="signup.firstName" name="firstname" required>
+    
+                                             <label for="input1">First Name</label>
+    
+                                            </div>
+    
+                                        </div>
+    
+                                        <div class="col-md-6">
+    
+                                            <div class="input-field">
+    
+                                                <input type="text" class="form-control" id="input2" [(ngModel)]="signup.lastName" name="lastname" required> 
+                                                <label for="input2">Last Name</label>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-2">
+
+                                    <div class="col-md-12">
+
+                                        <div class="input-field">
+
+                                            <input type="email" class="form-control" id="input3" [(ngModel)]="to" [(ngModel)]="signup.emailId" name="emailid"required>
+
+                                            <label for="input3">Email</label>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="row mt-2 mb-2">
+
+                                    <div class="col-md-12">
+
+                                        <div class="input-field">
+
+                                            <input type="password" class="form-control" id="input4" [(ngModel)]="signup.password" name="password"required> 
+                                            <label for="input4">Password</label>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <span class="pass" style="margin: 20px;">Password atlest 8 characters</span>
+
+                                 <div class="row mt-2">
+
+                                     <div class="col-md-12">
+
+                                         <button (click)="setValue()" class="btn btn-primary w-100 signup-button">Signup</button>
+
+                                         </div>
+
+                                         <span class="login" style="margin: 20px;"> Already have an account ?<a routerLink="/login">Login</a></span>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+
+                                        <div class="right-side-content">
+
+                                                <img src="../../../assets/images/ARM1.png" alt="Generic placeholder image">
+
+                                        </div>
+
+                                    </div>
+
+                            </div>
+
+                        </div>
+
+                        </div>
+
+                        </div>
+
+                        </div>
+
+                        </body>

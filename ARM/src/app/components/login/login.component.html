@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="login.component.css" type="text/css">
+</head>
+<body>
+       <div class="container">
+        <div class="row">
+                <div class="offset-md-2 col-lg-5 col-md-7 offset-lg-4 offset-md-3">
+                        <div class="panel border bg-light">
+                            <div class="panel-heading">
+                                <h3 class="pt-3 font-weight-bold">LOGIN</h3>
+                            </div>
+                            <div class="panel-body p-3">
+                                <form (ngSubmit) = "successNotification()">
+                                    <div class="form-group pt-3">
+                                        <div class="input-field">
+                                            <span class="fa fa-user p-2"></span>
+                                            <input type="text" [(ngModel)]="email" name="username" placeholder="username"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group pt-3">
+                                        <div class="input-field">
+                                            <span class="fa fa-lock p-2"></span>
+                                            <input type="password" [(ngModel)]="password" name="password" placeholder="password"/>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary submit btn-block mt-4 w-100">Login</button>
+                                    <div class="text-center pt-4 text-muted">Don't have an account ?<a id="forget" routerLink="/Video">SignUp</a></div>
+                                </form>
+                        </div>
+                        <div class="mx-3 my-2 py-2 bordert">
+                            <div class="text-center py-3">
+                                <a href="https://www.facebook.com" target="_blank" class="px-2"><img src="https://www.dpreview.com/files/p/articles/4698742202/facebook.jpeg"></a>
+                                <a href="https://www.facebook.com" target="_blank" class="px-2"><img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png"></a>
+                                <a href="https://www.facebook.com" target="_blank" class="px-2"><img src="https://www.freepnglogos.com/uploads/512x512-logo-png/512x512-logo-github-icon-35.png"></a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
